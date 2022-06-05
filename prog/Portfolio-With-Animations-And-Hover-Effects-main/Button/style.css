@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient( 45deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    background: #07252d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contact-btn{
+    color: #0e3742;
+    color: #21ebff;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 30px;
+    overflow: hidden;
+    filter: hue-rotate(270px);
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0003);
+    transition: 0.7s ease;
+}
+
+.contact-btn:hover{
+    color: #111;
+    color: #0e3742;
+    background: #21ebff;
+    box-shadow: 0 0 50px #21ebff;
+    transition-delay: 0.5s;
+}
+
+.contact-btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #21ebff;
+    border-left: 2px solid #21ebff;
+    transition: 0.5s ease;
+}
+
+.contact-btn:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-btn::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff;
+    border-right: 2px solid #21ebff;
+    transition: 0.5s ease;
+}
+
+.contact-btn:hover::after{
+    width: 100%;
+    height: 100%;
+}

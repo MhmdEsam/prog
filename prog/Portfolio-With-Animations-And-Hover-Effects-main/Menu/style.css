@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #221E22;
+    min-height: 100vh;
+}
+
+ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ul li{
+    position: relative;
+    list-style-type: none;
+}
+
+ul a{
+    color: transparent;
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: 1em;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+ul li a::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    color: var(--clr);
+    overflow: hidden;
+    transition: 1s ease;
+    border-right: 8px solid var(--clr);
+}
+
+ul li a:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 30px var(--clr));
+}
+
+
+
+
+
+
+
+
+
+
